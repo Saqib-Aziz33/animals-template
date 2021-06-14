@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+
+:root{
+    --ff-1-: 'Lato', sans-serif;
+
+    /* colors */
+    --clr-grey: rgb(241, 241, 241);
+    --clr-red: #eb4d4b;
+    --clr-silver: #f1f2f6;
+    --clr-black: #3d3d3d;
+    --muted-silver: #f1f2f6bd;
+}
+
+
+*{
+    font-family: var(--ff-1-);
+}
+
+
+/* utilities */
+.txt-grey{
+    color: var(--clr-grey);
+}
+nav .txt-grey:hover,nav .txt-grey:focus{
+    color: var(--clr-red);
+}
+.active{
+    color: white;
+}
+.btn-red{
+    background-color: var(--clr-red);
+    border: 2px solid var(--clr-red);
+}
+.btn-red:hover{
+    background-color: transparent;
+    color: var(--clr-grey);
+}
+.btn-red:focus{
+    box-shadow: 1px 1px 10px var(--clr-red);
+}
+.bg-silver{
+    background-color: var(--clr-silver);
+}
+.txt-red{
+    color: var(--clr-red);
+}
+.bg-black{
+    background-color: var(--clr-black);
+}
+.txt-light-muted{
+    color: var(--muted-silver);
+}
+
+
+
+/* header */
+.header-bg{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../img/bg1.jpg) no-repeat fixed center/cover;
+    min-height: 530px;
+}
+.header-hero{
+    height: 80%;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.animation-1{
+    animation-name: ani1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+.animation-2{
+    animation-name: ani1;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+.animation-3{
+    animation-name: ani1;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+}
+@keyframes ani1{
+    from{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* section2 */
+.bg-section-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(237, 77, 75, 0.6)), url(../img/bg2.jpg) no-repeat fixed center/cover;
+}
