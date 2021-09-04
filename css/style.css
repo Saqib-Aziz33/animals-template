@@ -52,10 +52,19 @@ nav .txt-grey:hover,nav .txt-grey:focus{
 .txt-light-muted{
     color: var(--muted-silver);
 }
-
+.text-black{
+    color: black;
+}
 
 
 /* header */
+.navbar.active{
+    background-color: white;
+}
+.navbar.active a{
+    color: black !important;
+    font-size: 1.1rem;
+}
 .header-bg{
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../img/bg1.jpg) no-repeat fixed center/cover;
